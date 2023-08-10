@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meses</title>
+  <link rel="stylesheet" href="estilos.css">
+  <title>Média</title>
 </head>
 <body>
-  <script Language="JavaScript">
-    let numeros = []
-    let soma = 0
+  <div id="numeros-container">
+    <script Language="JavaScript">
+      let numeros = []
+      let soma = 0
 
-    for (n = 0; n < 4; n++) {
-      numeros[n] = parseFloat(window.prompt("Informe um número "+n+":"));
-      soma += numeros[n]
-    }
-    
-    let media = soma/numeros.length
-    console.log(numeros)
-    document.write("<br>");
-    document.write(numeros.toString());
-    document.write("<br>");
-    document.write("A média é igual a " +media);
-  </script>
+      for (n = 0; n < 4; n++) {
+        numeros[n] = parseFloat(window.prompt("Informe um número "+n+":"));
+        soma += numeros[n]
+      }
+      
+      let media = soma/numeros.length
+      console.log(numeros)
+      document.write(numeros.toString());
+      document.write("<br>");
+      document.write("A média é igual a " +media);
+      
+    </script>
+  </div>
 </body>
 </html>

@@ -3,25 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meses</title>
+  <link rel="stylesheet" href="estilos.css">
+  <title>Lista Ordenada</title>
 </head>
 <body>
-  <script Language="JavaScript">
-    let nome = []
-    
-    for (n = 0; n < 4; n++) {
-      nome[n] = window.prompt("Informe o nome do aluno "+n+":");
-    }
-    
-    let nomesOrdenados = nome.sort();
+  <div id="numeros-container">
+    <script Language="JavaScript">
+      let nome = []
+      
+      for (n = 0; n < 4; n++) {
+        nome[n] = window.prompt("Informe o nome do aluno "+n+":");
+      }
+      
+      let nomesOrdenados = nome.sort();
 
-    console.log(nomesOrdenados)
-    document.write("Lista:");
-    document.write("<br>");
-    document.write(nomesOrdenados.join(', '));
-    document.write("<br>");
-    document.write('Quantidade:');
-    document.write(nomesOrdenados.length);
-  </script>
+      console.log(nomesOrdenados)
+      document.write("Lista:");
+      document.write("<br>");
+      document.write(nomesOrdenados.join(', '));
+      document.write("<br>");
+      document.write("<br>");
+      document.write('Quantidade: ');
+      document.write("<br>");
+      document.write(nomesOrdenados.length);
+    </script>
+  </div>
 </body>
 </html>

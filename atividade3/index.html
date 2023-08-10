@@ -3,34 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meses</title>
+  <link rel="stylesheet" href="estilos.css">
+  <title>Menor e maior</title>
 </head>
 <body>
-  <script Language="JavaScript">
-    let numeros = []
-    
-    for (n = 0; n < 4; n++) {
-      numeros[n] = parseFloat(window.prompt("Informe um número "+n+":"));
-    }
-    
-    let maior = numeros[0];
-    let menor = numeros[0];
-
-    for (n = 0; n < 4; n++) {
-      if (maior < numeros[n])
-        maior = numeros[n]
+  <div id="numeros-container">
+    <script Language="JavaScript">
+      let numeros = []
       
-      if (menor > numeros[n])
-        menor = numeros[n]
+      for (n = 0; n < 4; n++) {
+        numeros[n] = parseFloat(window.prompt("Informe um número "+n+":"));
+      }
+      
+      let maior = numeros[0];
+      let menor = numeros[0];
 
-    }
-    console.log(numeros)
-    document.write("<br>");
-    document.write(numeros.toString());
-    document.write("<br>");
-    document.write("O maior número é: " +maior);
-    document.write("<br>");
-    document.write("O menor número é: " +menor);
-  </script>
+      for (n = 0; n < 4; n++) {
+        if (maior < numeros[n])
+          maior = numeros[n]
+        
+        if (menor > numeros[n])
+          menor = numeros[n]
+
+      }
+      console.log(numeros)
+      document.write(numeros.toString());
+      document.write("<br>");
+      document.write("O maior número é: " +maior);
+      document.write("<br>");
+      document.write("O menor número é: " +menor);
+      
+    </script>
+  </div>
 </body>
 </html>
